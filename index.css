@@ -1,0 +1,141 @@
+/* Priority */
+/* Inline Styling > Ids > classes > tags */
+
+ol {
+    background-color: yellow;
+}
+
+img {
+    /* min-width: 200px; */
+    width: clamp(200px, 50%, 300px);
+    /* max-width: 300px; */
+}
+
+p.question {
+    color: red;
+}
+
+.answer {
+    color: green;
+}
+
+#first-question {
+    color: brown;
+}
+
+.welcome {
+    height: 100px;
+    padding: 16px;
+    border: 4px solid red;
+    /* background-color: blue; */
+    margin: 32px 16px 48px;
+    /* margin-left: -10px; */
+
+    /* position: static; */
+
+    /* position: relative;
+    bottom: 200px;
+    left: 100px; */
+
+    /* position: absolute;
+    bottom: 100px;
+    right: 200px; */
+
+    /* position: fixed;
+    top: 100px;
+    right: 200px; */
+
+    /* position: sticky;
+    top: 10px; */
+}
+
+.welcome > ul {
+    list-style-type: none;
+}
+
+/* body > ul {
+    list-style-type: none;
+} */
+
+
+.parent {
+    height: 100px;
+    border: 1px solid red;
+    padding: 16px;
+    width: 300px;
+}
+
+.child {
+    height: 20%;
+    border: 1px solid green;
+    width: 50%;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+@media screen and (min-width: 400px) {
+    h1 {
+        font-size: 32px;
+    }
+    ol {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 40px;
+    }
+    ol {
+        background-color: blue;
+    }
+}
+
+@media print {
+    h1 {
+        color: yellow !important;
+        font-size: 20px;
+    }
+}
+
+/* two axis in flex */
+/* main axis */
+/* cross axis */
+
+/* justify-content : arranges the children in the main axis : flex-start, flex-end, center, */
+ /* space-around, space-between, space-evenly  */
+
+/* align-items : arranges the children in the cross axis */
+
+.parent-flex {
+    border: 4px solid red;
+    height: 90vh;
+    display: flex;
+    flex-wrap: nowrap;
+    /* flex-direction: column;  */
+    /* main axis becomes vertical */ /* cross axis become horizontal */
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.child-flex {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    margin: 10px;
+    font-size: 48px;
+    text-align:center;
+}
+
+.flex-2 {
+    /* flex-grow: 3; */
+    /* flex-shrink: 2; */
+    /* order: 1; */
+}
+
+.flex-4 {
+    /* flex-grow: 1; */
+}
